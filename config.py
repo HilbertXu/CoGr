@@ -95,14 +95,14 @@ JACQUARD_DATASET = ['background', 'object']
 
 
 
-from OCID_class_dict import cls_list as OCID_GRASP_DATASET
+from datasets.OCID_class_dict import cls_list as OCID_GRASP_DATASET
 
 PER_CLASS_MAX_GRASP_WIDTH = [65, 83, 45, 64, 43, 23, 140, 62, 29, 107, 147, 70, 34, 103, 112, 118, 101, 70, 41, 51, 80, 61, 77, 74, 57, 56, 74, 42, 54, 49, 75]
 
 
 # from graspnet_dataset import GraspNetDataset
-from ocid_grasp import OCIDGraspDataset
-from jacquard_dataset import JacquardGraspDataset
+from datasets.ocid_grasp import OCIDGraspDataset
+from datasets.jacquard_dataset import JacquardGraspDataset
 
 
 class res101_jacquard:

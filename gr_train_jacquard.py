@@ -15,13 +15,11 @@ import re
 from utils import timer
 from modules.gr_yolact_jacquard import GraspYolact
 from config import get_config
-from utils.coco import COCODetection, train_collate
-from utils.common_utils import save_best, save_latest
+from utils.coco import train_collate
 from gr_eval import evaluate_jacquard
 
 # from graspnet import GraspNetDetection
 # from ocid_grasp import OCIDGraspDataset
-from utils.gr_augmentation import gr_train_aug, gr_val_aug
 
 parser = argparse.ArgumentParser(description='Yolact Training Script')
 parser.add_argument('--local_rank', type=int, default=None)

@@ -10,18 +10,11 @@ import torch.utils.data as data
 from tensorboardX import SummaryWriter
 import argparse
 import datetime
-import re
 
 from utils import timer
 from modules.gr_yolact import GraspYolact
 from config import get_config
-from utils.coco import COCODetection, train_collate
-from utils.common_utils import save_best, save_latest
-from gr_eval import evaluate
-
-from graspnet import GraspNetDetection
-from ocid_grasp import OCIDGraspDataset
-from utils.gr_augmentation import gr_train_aug, gr_val_aug
+from utils.coco import train_collate
 
 parser = argparse.ArgumentParser(description='Yolact Training Script')
 parser.add_argument('--local_rank', type=int, default=None)
